@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Angel -Formulário</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Angel</a>
+        </div>
+        <ul class="menu-desktop">
+            <li> <a href="index.html"> Página inicial </a></li>
+            <li> <a href="pag_inf.html"> Saiba mais </a></li>
+            <li> <a href="contatos.html"> Contatos </a></li>
+            <li> <a href="quemsomos.html"> Quem somos</a></li>
+        </ul>
+        <ul class="menu-mobile">
+            <div class="icon-close">
+                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+            </div>
+            <li> <a href="index.html"> Página inicial </a></li>
+            <li> <a href="pag_inf.html"> Saiba mais </a></li>
+            <li> <a href="contatos.html"> Contatos </a></li>
+            <li> <a href="quemsomos.html"> Quem somos</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+    <section class="banner1">
+        <div class="texto">
+            <h1 class="titulo"> Preencha o formulário</h1>
+            <form>
+
+                <div class="input-group">
+                    <label for="firstname" class="title">Primeiro Nome:</label>
+                    <div class="input-box">
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
+                            required>
+                    </div>
+
+                    <label for="lastname" class="title">Sobrenome:</label>
+                    <div class="input-box">
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <label for="email" class="title">E-mail:</label>
+                    <div class="input-box">
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <label for="number" class="title">Celular:</label>
+                    <div class="input-box">
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="title">
+                        <label for="gender">Gênero: </label>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-input margin-top-25 margin-bottom-25">
+                    <textarea rows="12" cols="80" maxlength="300" placeholder="Digite aqui sua denúncia!"
+                        required></textarea>
+                </div>
+                <div class="button">
+                    <button id="button">Enviar</button>
+                </div>
+
+            </form>
+
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; IFCE - Campus Morada Nova</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
